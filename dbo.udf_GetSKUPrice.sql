@@ -6,7 +6,7 @@ RETURNS DECIMAL(18, 2)
   SELECT @skuPrice = sum( "Value")/sum(quantity)
   FROM dbo.Basket
   WHERE id_sku=@ID_SKU
-  RETURN @skuPrice
+ RETURN @skuPrice
  END
 
   
