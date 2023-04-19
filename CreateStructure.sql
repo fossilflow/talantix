@@ -26,6 +26,6 @@ DROP TABLE dbo.Basket;
  "Value" money CHECK( "Value" >= 0), 
  PurchaseDate date DEFAULT CONVERT (date, GETDATE()), 
  DiscountValue decimal(18, 4));
-
+ 
 
 
