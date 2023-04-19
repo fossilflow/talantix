@@ -12,8 +12,7 @@ DECLARE @sumbasketvalue money
 	where family.surname = @FamilySurName
 if @FamilySurName in (select surname from dbo.Family)
     update dbo.Family
-	SET
-	 BudgetValue = @sumbasketvalue
+	SET BudgetValue = @sumbasketvalue
 	 where family.surname = @FamilySurName;
 else print 'No such family'   
 END;
