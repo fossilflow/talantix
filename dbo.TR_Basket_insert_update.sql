@@ -18,7 +18,7 @@ quantity,
  PurchaseDate,
 cast(case when c.sku_count >=2
      then "Value" *0.05
-	 else 0 end as decimal(18, 4))DiscountValue
+     else 0 end as decimal(18, 4))DiscountValue
 FROM inserted i
 inner join 
 (select id_SKU, 
